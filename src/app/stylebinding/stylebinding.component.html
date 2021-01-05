@@ -1,0 +1,14 @@
+<p>stylebinding works!</p>
+<div class="first" [ngStyle]='mydiv'>
+    <h1>style binding</h1>
+</div>
+<br><br>
+<h1 [style.color]="'green'">header1</h1>
+<h1 [style.backgroundColor]="'green'">header2</h1>
+<br><br>
+<h1 [style.color]="color">Dynamic Style</h1>
+
+<button (click)="updateColor()">update Color</button>
+
+<br><p>conditional style</p>
+<h1 [style.color]="err?'red':'green'">conditional Style</h1>

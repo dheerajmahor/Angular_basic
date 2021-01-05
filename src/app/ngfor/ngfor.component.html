@@ -1,0 +1,16 @@
+<p>ngfor works!</p>
+
+<table  class="table table-bordered ">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>mobile</th>
+        <th>education</th>
+     </tr>
+     <tr *ngFor="let obj of students">
+         <td>{{obj.id}}</td>
+         <td>{{obj.name}}</td>
+         <td>{{obj.mobile}}</td>
+         <td>{{obj.education}}</td>
+     </tr>
+</table>

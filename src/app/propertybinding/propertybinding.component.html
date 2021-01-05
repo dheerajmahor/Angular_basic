@@ -1,0 +1,13 @@
+<p>propertybinding works!</p>
+<input type="text" [value]="name">
+<br><br>
+{{hide}}
+<button class="bg-info" [disabled]='hide'>submit</button>
+<br><br>
+<h2>Secon exp</h2>
+
+<input type="text" [disabled]="disableBox" [value]="name">
+<br>
+<input type="text" disabled={{disableBox}} value={{name}}>
+<br>
+<button (click)="enableBox()">Enable</button>

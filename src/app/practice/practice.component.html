@@ -1,0 +1,39 @@
+<p class="bg-success text-white p-3">practice works!</p>
+<br><br><br><br>
+<!-- <h1></h1>
+<input type="text" #data >
+<br>
+<h1>{{val}}</h1>
+<button (click)="getValue(data.value)">submit</button>
+ -->
+<div class="my" *ngIf="'c' ==computer;then corect else wrong">
+    <h1>if condition</h1>
+</div>
+<ng-template #corect>
+    <h1>correct</h1>
+</ng-template>
+<ng-template #wrong>
+    <h1>wrong</h1>
+</ng-template>
+<br>
+<h1 *ngIf="show else name">angular</h1>
+
+<ng-template #name>
+    <h1>dheeraj mahor</h1>
+</ng-template>
+<br>
+<table border="2">
+    <tr >
+        <td>ID</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Mobile</td>
+    </tr>
+    <tr *ngIf="students">
+         <td>{{students.id}}</td>
+         <td>{{students.name}}</td>
+         <td>{{students.email}}</td>
+         <td>{{students.mobile}}</td>
+    </tr>
+</table>
+

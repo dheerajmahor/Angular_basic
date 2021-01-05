@@ -1,0 +1,15 @@
+<p>templaterefreshvariable works!</p>
+<h1 class="p-4 bg-success text-white text-center">Template-reference-variable works! Angular 8</h1>
+
+
+<div class="container mt-5">
+    <h1 class="text-center text-warning">{{mydata}}</h1>
+    <input type="text" #name   class="form-control">  <!--#name(Template-reference-variable)-->
+    <br>
+
+    <button class="btn btn-outline-warning  btn-lg"  (click)="myFun(name.value)">Submit Form</button>
+
+</div>
+<br><br>
+<h1>{{currentVal}}</h1>
+<input type="text" (keyup)="getVal($event.target.value)">

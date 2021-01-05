@@ -1,0 +1,45 @@
+<p>ngif works!</p>
+
+<div class="first" *ngIf=" c =='computer'">
+    <h1>this condition is true</h1>
+</div>
+
+<h1 *ngIf="show else name">angular</h1>
+
+<ng-template #name>
+    <h1>dheeraj mahor</h1>
+</ng-template>
+
+<div *ngIf=" c == 'computer'; then correct else wrong">
+</div>
+
+<ng-template #correct>
+    <h1 class="text-center text-white bg-success p-3"> 
+
+
+        sir you are leran in computer depart 2...
+</h1>
+</ng-template>
+<ng-template #wrong>
+    <h1 class="text-center text-white bg-danger p-3"> 
+
+
+        sir you are not leran in computer depart...
+</h1>
+</ng-template>
+
+<ng-template [ngIf]="isLoggedIn" [ngIfElse]="loggedOut">
+    <div>
+      Welcome back, friend.
+    </div>
+  </ng-template>
+  
+  <ng-template #loggedOut>
+    <div>
+      Please friend, login.
+    </div>
+  </ng-template>
+
+
+
+
